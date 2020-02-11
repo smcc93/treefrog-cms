@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass scss/styles.scss css/styles.css -w"
+    "sass": "node-sass public/scss/styles.scss public/css/styles.css -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TShelton41/treefrog-cms.git"
   },
-  "author": "Todd Shelton",
+  "author": "Stewart McCalley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TShelton41/treefrog-cms/issues"
