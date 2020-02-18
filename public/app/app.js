@@ -21,6 +21,7 @@ function ModalButtons() {
   $(".main-nav").click(function(e) {
     $(".alert-box").html(SERVICE.getMainNavContent());
     $(".modal").css("display", "flex");
+    $(".alert-box").css("justify-content", "center");
   });
   $(".sub-nav").click(function(e) {
     $(".alert-box").html(SERVICE.getSubNavContent());

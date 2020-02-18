@@ -27,10 +27,11 @@
     background-color: $dark-color;
     margin: auto;
     border-radius: 10px;
-  }
+    color: $white-color;
 
-  .btn-tan {
-    background-color: #f2dcc9;
-    color: #393c40;
+    .btn-tan {
+      background-color: #f2dcc9;
+      color: #393c40;
+    }
   }
 }
