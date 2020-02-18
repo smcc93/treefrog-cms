@@ -5,12 +5,10 @@ var SERVICE = (function() {
     return contentStr;
   };
 
-  var _getCreateButtons = function() {
-    let buttonString = `<span class="btn btn-dark ">Create Main Nav</span><span class="btn btn-dark ">Create Sub Nav</span>`;
+  var _getCreateNavButtons = function() {
+    let buttonString = `<span class="btn btn-dark main-nav ">Create Main Nav</span><span  class="btn btn-dark sub-nav ">Create Sub Nav</span>`;
     return buttonString;
   };
-
-  var _getCreateNavButtons = function() {};
 
   var _getHomeContent = function() {
     let homeContent = ` <h1>Welcome to the Treefrog CMS</h1>
@@ -33,14 +31,28 @@ var SERVICE = (function() {
     return homeContent;
   };
 
-  var _getStartButton = function() {
+  var _getHomeStartButton = function() {
     let srtButton = `<span class="btn btn-dark get-started">Get Started</span>`;
     return srtButton;
   };
+
+  var _getMainNavContent = function() {
+    let mainNav = `<h2>Use this box to create navigation links</h2><p>You can create main navigation and sub navigation. To create a sub-navigation you will need to first select a main nav and then create the sub-nav.</p><p>Using the text box below enter the name of your main navigation</p>`;
+
+    return mainNav;
+  };
+
+  var _getSubNavContent = function() {
+    let subNav = `<h2>Create Sub Navigation</h2><p>In order to create a sub navigation you need to select a main nav.</p><p>Using the text box below enter the name of your sub navigation.</p>`;
+
+    return subNav;
+  };
   return {
     getGetStartedContent: _getGetStartedContent,
-    getCreateButtons: _getCreateButtons,
-    getStartButton: _getStartButton,
-    getHomeContent: _getHomeContent
+    getCreateNavButtons: _getCreateNavButtons,
+    getHomeStartButton: _getHomeStartButton,
+    getHomeContent: _getHomeContent,
+    getMainNavContent: _getMainNavContent,
+    getSubNavContent: _getSubNavContent
   };
 })();
