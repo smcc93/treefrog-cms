@@ -29,20 +29,42 @@ p {
   background-color: #393c40;
   color: #f2f2f2; }
 
+.btn-tan {
+  background-color: #f2dcc9;
+  color: #393c40;
+  margin-top: 35px; }
+
 .modal {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(242, 242, 242, 0.5);
   display: none; }
+  .modal .clickbox {
+    background-color: rgba(242, 242, 242, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+    .modal .clickbox .closeX {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 50px;
+      cursor: pointer; }
   .modal .alert-box {
+    position: relative;
     width: 600px;
     height: 350px;
     background-color: #393c40;
     margin: auto;
-    border-radius: 10px; }
+    border-radius: 10px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99; }
 
 .nav {
   position: fixed;

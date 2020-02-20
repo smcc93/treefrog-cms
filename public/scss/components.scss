@@ -11,6 +11,11 @@
   background-color: #393c40;
   color: $white-color;
 }
+.btn-tan {
+  background-color: #f2dcc9;
+  color: #393c40;
+  margin-top: 35px;
+}
 
 .modal {
   position: fixed;
@@ -18,20 +23,35 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba($white-color, 0.5);
+  // background-color: rgba($white-color, 0.5);
   display: none;
+  .clickbox {
+    background-color: rgba($white-color, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
 
+    .closeX {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 50px;
+      cursor: pointer;
+    }
+  }
   .alert-box {
+    position: relative;
     width: 600px;
     height: 350px;
     background-color: $dark-color;
     margin: auto;
     border-radius: 10px;
     color: $white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-    .btn-tan {
-      background-color: #f2dcc9;
-      color: #393c40;
-    }
+    align-items: center;
+    z-index: 99;
   }
 }

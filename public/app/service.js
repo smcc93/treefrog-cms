@@ -37,13 +37,13 @@ var SERVICE = (function() {
   };
 
   var _getMainNavContent = function() {
-    let mainNav = `<h2>Use this box to create navigation links</h2><p>You can create main navigation and sub navigation. To create a sub-navigation you will need to first select a main nav and then create the sub-nav.</p><p>Using the text box below enter the name of your main navigation</p><input><span class="btn btn-tan">Create Main Nav</span><span  class="btn btn-tan">Cancel</span>`;
+    let mainNav = `<h2>Use this box to create navigation links</h2><p>You can create main navigation and sub navigation. To create a sub-navigation you will need to first select a main nav and then create the sub-nav.</p><p>Using the text box below enter the name of your main navigation</p><div><input></div><div><span class="btn btn-tan">Create Main Nav</span><span  class="btn btn-tan closeModal">Cancel</span></div>`;
 
     return mainNav;
   };
 
   var _getSubNavContent = function() {
-    let subNav = `<h2>Create Sub Navigation</h2><p>In order to create a sub navigation you need to select a main nav.</p><p>Select a main navigation</p><select></select><p>Using the text box below enter the name of your sub navigation.</p><input><span class="btn btn-tan">Create Main Nav</span><span  class="btn btn-tan">Cancel</span>`;
+    let subNav = `<h2>Create Sub Navigation</h2><p>In order to create a sub navigation you need to select a main nav.</p><p>Select a main navigation</p><select></select><p>Using the text box below enter the name of your sub navigation.</p><div><input></div><div><span class="btn btn-tan">Create Main Nav</span><span  class="btn btn-tan closeModal">Cancel</span></div>`;
 
     return subNav;
   };
