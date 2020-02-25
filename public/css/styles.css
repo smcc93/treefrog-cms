@@ -63,6 +63,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 20px;
     align-items: center;
     z-index: 99; }
 

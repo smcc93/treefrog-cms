@@ -37,7 +37,7 @@ var SERVICE = (function() {
   };
 
   var _getMainNavContent = function() {
-    let mainNav = `<h2>Use this box to create navigation links</h2><p>You can create main navigation and sub navigation. To create a sub-navigation you will need to first select a main nav and then create the sub-nav.</p><p>Using the text box below enter the name of your main navigation</p><div><input></div><div><span class="btn btn-tan">Create Main Nav</span><span  class="btn btn-tan closeModal">Cancel</span></div>`;
+    let mainNav = `<h2>Use this box to create navigation links</h2><p>You can create main navigation and sub navigation. To create a sub-navigation you will need to first select a main nav and then create the sub-nav.</p><p>Using the text box below enter the name of your main navigation</p><div><input class="navTitle"></div><div><span class="btn btn-tan createMain">Create Main Nav</span><span  class="btn btn-tan closeModal">Cancel</span></div>`;
 
     return mainNav;
   };
@@ -47,12 +47,18 @@ var SERVICE = (function() {
 
     return subNav;
   };
+
+  var _getQuillEditor = function() {
+    let quillEditor = `<h1>Treefrog CMS</h1><p>Now that you have your navigation set, you can create your content. Below you will see your navigation name and a text editor. Create your content in the text editor and then click on "Save Page Info". Once you have done that click on "PREVIEW SITE" to see what your web page looks like.</p><h2 class="tag"></h2><div id="editor" class="quill"></div><span class= "btn btn-dark">Save Page Info</span>`;
+    return quillEditor;
+  };
   return {
     getGetStartedContent: _getGetStartedContent,
     getCreateNavButtons: _getCreateNavButtons,
     getHomeStartButton: _getHomeStartButton,
     getHomeContent: _getHomeContent,
     getMainNavContent: _getMainNavContent,
-    getSubNavContent: _getSubNavContent
+    getSubNavContent: _getSubNavContent,
+    getQuillEditor: _getQuillEditor
   };
 })();
