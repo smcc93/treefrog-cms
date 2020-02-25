@@ -62,6 +62,8 @@ function goToMainNav() {
       } else {
         alert("This name already exists");
       }
+    } else {
+      alert("Input is empty");
     }
   });
 }
