@@ -4,6 +4,11 @@ This is a CMS created with Firebase and jQuery. We are just showing how to creat
 
 This is just the base HTML for the project. You will be creating the rest.
 
+## Homework urls
+
+[Homework 5 staright to addSave page](https://in-info-web4.informatics.iupui.edu/~smccalle/treefrog-cms-homework5/public/addSave.html)
+[Homework 5 to web4 main](https://in-info-web4.informatics.iupui.edu/~smccalle/)
+
 ## Steps to turn this into a Firebase project
 
 You need to plan your application you are creating and if you are going to include Firebase create a base project folder and then do all of this first before you start coding your project. It is easier, and also remember to put all of your files that you create for your application in the public folder that is created. So put your css, lib, app etc. in the public folder.
