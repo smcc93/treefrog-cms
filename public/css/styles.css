@@ -34,6 +34,13 @@ p {
   color: #393c40;
   margin-top: 35px; }
 
+.btn-spacing {
+  margin-top: 50px; }
+
+.quill {
+  width: 100%;
+  height: 150px; }
+
 .modal {
   position: fixed;
   top: 0;
@@ -114,3 +121,41 @@ p {
   .content-wrapper .text-wrapper {
     width: 30%;
     margin-bottom: 40px; }
+
+.ql-indent-1 {
+  text-indent: 50px; }
+
+.ql-indent-2 {
+  text-indent: 100px; }
+
+.ql-indent-3 {
+  text-indent: 150px; }
+
+.ql-indent-4 {
+  text-indent: 200px; }
+
+.ql-indent-5 {
+  text-indent: 250px; }
+
+.ql-indent-6 {
+  text-indent: 300px; }
+
+.ql-indent-7 {
+  text-indent: 350px; }
+
+.ql-indent-8 {
+  text-indent: 400px; }
+
+.ql-align-right {
+  text-align: right; }
+
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.showData nav a {
+  text-decoration: none;
+  margin: 10px; }
