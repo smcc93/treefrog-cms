@@ -1,3 +1,20 @@
+function addNavListener() {
+  $("nav a").click(function (e) {
+    var id = e.currentTarget.id;
+    var newNavName = $("#updateContent").val().toLowerCase().trim();
+
+    PRACTICE_SERVICE.updateData(id, newNavName, displayData);
+  });
+}
+
+function deleteListener() {
+  $("nav a").click(function (e) {
+    var id = e.currentTarget.id;
+
+    PRACTICE_SERVICE.updateData(id, newNavName, displayData);
+  });
+}
+
 function displayData(addData) {
   var container = "<nav>";
   addData.forEach(function (doc) {
@@ -8,6 +25,9 @@ function displayData(addData) {
   });
   container += "</nav>";
   $(".showData").html(container);
+
+  addNavListener();
+  deleteListener();
 }
 function init() {
   $(".getData").click(function (e) {

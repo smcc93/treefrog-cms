@@ -9,6 +9,27 @@ var PRACTICE_SERVICE = (function () {
         callback(querySnapshot);
       });
   };
+  var _updateData = function (id, newContent, callback) {
+    var newObj = { navName: newContent };
+
+    _db
+      .collection("Pages")
+      .doc(id)
+      .update(newObj)
+      .then(function () {
+        _getAllData(callback);
+      });
+  };
+
+  var _deleteNav = function (id, callback) {
+    _db
+      .collection("Pages")
+      .doc(id)
+      .delete()
+      .then(function () {
+        _getAllData(callback);
+      });
+  };
 
   var _addData = function (navName, callback) {
     let pageFakeData = {
@@ -65,5 +86,7 @@ var PRACTICE_SERVICE = (function () {
     // addData: _addData,
     checkPages: _checkPages,
     getAllData: _getAllData,
+    updateData: _updateData,
+    deleteNav: _deleteNav,
   };
 })();
